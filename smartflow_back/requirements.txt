@@ -1,0 +1,6 @@
+fastapi                      # FastAPI 프레임워크
+uvicorn[standard]            # 개발 서버 (ASGI)
+sqlalchemy                   # ORM
+pydantic                     # 데이터 검증용
+passlib[bcrypt]              # 비밀번호 해시 처리
+python-dotenv                # 환경 변수 파일(.env) 관리
