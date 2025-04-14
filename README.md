@@ -51,6 +51,16 @@
 
 ---
 
-## 🤖 AI 도움 활용
+## 초기설정
+
+npm install -D eslint prettier \
+ eslint-config-prettier \
+ eslint-plugin-react \
+ eslint-plugin-react-hooks \
+ eslint-plugin-jsx-a11y \
+ @typescript-eslint/eslint-plugin \
+ @typescript-eslint/parser
+
+요즘은 eslint.json 안쓰고 eslint.config.js 쓴다고함
 
 ---
