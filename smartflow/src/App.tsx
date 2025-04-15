@@ -1,7 +1,7 @@
-import './App.css';
+import '../src/styles/index.css';
 
 function App() {
-  return <>Smart Flow</>;
+  return <h1 className="text-3xl font-bold underline">Smart Flow</h1>;
 }
 
 export default App;
