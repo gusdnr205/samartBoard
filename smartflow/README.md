@@ -40,3 +40,14 @@
 
 - 불변 데이터 관리
   - Immer
+
+## 단위테스트
+
+- jest 도 고려중
+- Vite를 사용중일경우 Vite가 더 빠르고 부드럽게 된다고함
+
+- npm install --save-dev vitest jsdom @testing-library/react @testing-library/jest-dom
+
+## 배포전략
+
+- vercel에 프론트를 배포할경우 backend와는 api 통신을 해야할것으로 보임 이점에 대한 확인 필요

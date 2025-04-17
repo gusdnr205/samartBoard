@@ -34,6 +34,7 @@
     "noUnusedParameters": false, //쓰지않는 파라미터 있으면 에러내기
     "noFallthroughCasesInSwitch": true, //switch문 이상하면 에러내기
     "noImplicitReturns": false, //함수에서 return 빼먹으면 에러내기
+    "types": ["vitest"],
 
     /* Alias */
     "baseUrl": ".",
@@ -45,7 +46,9 @@
   },
   "include": [
     "src",
-    "global.d.ts" // 타입 정의 파일 경로 추가
+    "global.d.ts", // 타입 정의 파일 경로 추가
+    "**/*.test.ts"
   ],
-  "exclude": ["node_modules", "dist", "**/*.test.ts"]
+  // "exclude": ["node_modules", "dist", "**/*.test.ts"]
+  "exclude": ["node_modules", "dist"]
 }
