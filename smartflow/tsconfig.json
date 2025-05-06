@@ -41,7 +41,12 @@
     "paths": {
       "@assets/*": ["src/assets/*"],
       "@styles/*": ["src/styles/*"],
-      "@stores/*": ["src/stores/*"]
+      "@stores/*": ["src/stores/*"],
+      "@pages/*": ["src/pages/*"],
+      "@lib/*": ["src/lib/*"],
+      "@features/*": ["src/features/*"],
+      "@router/*": ["src/router/*"],
+      "@components/*": ["src/components/*"],
     }
   },
   "include": [
