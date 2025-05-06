@@ -24,3 +24,7 @@ databases:
     plan: free
 
 version: "1"
+
+
+postgresql://postgresqlsmartflow_user:dB1yRGOquky5CMaeZDZ4KfgBqOUgdplS@dpg-d0d40sbe5dus73clfqq0-a.oregon-postgres.render.com/postgresqlsmartflow
+postgresql://postgresqlsmartflow_user:dB1yRGOquky5CMaeZDZ4KfgBqOUgdplS@dpg-d0d40sbe5dus73clfqq0-a/postgresqlsmartflow
