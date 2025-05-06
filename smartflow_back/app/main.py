@@ -3,7 +3,7 @@
 from fastapi import FastAPI
 from app.api.v1.router import api_router
 from app.db.session import engine
-from app.db.base import Base
+from app.db.base import Base  # <- 여기서 모든 모델 import된 상태
 
 app = FastAPI(
     title="My FastAPI App",
