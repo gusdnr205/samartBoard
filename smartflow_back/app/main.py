@@ -4,7 +4,7 @@ from fastapi import FastAPI
 from app.api.v1.router import api_router
 from app.db.session import engine
 from app.db.base import Base  # <- 여기서 모든 모델 import된 상태
-
+import os
 app = FastAPI(
     title="My FastAPI App",
     version="1.0.0"
@@ -16,3 +16,6 @@ def on_startup():
     Base.metadata.create_all(bind=engine)
 
 app.include_router(api_router, prefix="/api/v1")
+
+
+print("📌 Loaded DATABASE_URL:", os.getenv("DATABASE_URL"))
