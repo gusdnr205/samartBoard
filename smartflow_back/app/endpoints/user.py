@@ -17,3 +17,7 @@ def get_user(user: str, db: Session = Depends(get_db)):
         "name": db_user.user_nm,
         "email": db_user.email
     }
+
+@router.get("/")
+def ping():
+    return {"message": "pong"}
