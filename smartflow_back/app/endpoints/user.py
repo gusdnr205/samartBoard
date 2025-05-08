@@ -1,6 +1,7 @@
 # api/v1/endpoints/user.py
 
 from fastapi import APIRouter, Depends, HTTPException
+from app.services.lostark import fetch_lostark_data,fetch_lostark_News
 from sqlalchemy.orm import Session
 from app.db.session import get_db
 from app.db.crud.user import get_user_by_user_id
@@ -21,3 +22,14 @@ def get_user(user: str, db: Session = Depends(get_db)):
 @router.get("/")
 def ping():
     return {"message": "pong"}
+
+
+@router.get("/lostark/{character_name}/{endpoint}")
+async def get_lostark_info(character_name: str, endpoint: str):
+    data = await fetch_lostark_data(endpoint, character_name)
+    return {"result": data}
+
+@router.get("/lostark/news/{searchtext}")
+async def get_lostark_news(searchtext):
+    data = await fetch_lostark_News(searchtext)
+    return {"result": data}

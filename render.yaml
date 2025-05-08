@@ -18,6 +18,7 @@ services:
           property: connectionString
       - key: PYTHONPATH
         value: .
+      - key : LOSTARK_API_KEY
 
 databases:
   - name: samartflow              # 공백 누락 수정
